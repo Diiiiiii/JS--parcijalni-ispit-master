@@ -82,14 +82,14 @@ html {
     align-items: center;
   }
   
-   /* .pokemon__sprite {
+   .genre__name {
     width: 240px;
     height: 240px;
     border-radius: 100%;
     border: 1px dotted black;
     image-rendering: pixelated;
     background: white;
-  }  */
+  }  
   
   .artist__name {
     font-size: 1.25rem;
@@ -99,10 +99,10 @@ html {
     margin: 24px;
   }
   
-  .artist__name {
+  .track__name {
     width: 100%;
   }
-  .artist__name {
+  .track__name {
     padding: 8px 0;
     text-transform: uppercase;
     font-size: 0.5rem;

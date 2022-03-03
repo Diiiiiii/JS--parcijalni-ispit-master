@@ -17,7 +17,7 @@ function showiTunes(itunes) {
 
   const artistName = itunes.artistName;
   const trackName = itunes.trackName;
-  const genreName = itunes.primaryGenreName;
+  const genreName = itunes.artworkUrl60;
 
   const elements = itunes["results"];
 
@@ -25,7 +25,7 @@ function showiTunes(itunes) {
 
     const artistName = elements[i].artistName;
     const trackName = elements[i].trackName;
-    const genreName = elements[i].primaryGenreName;
+    const genreName = elements[i].artworkUrl60;
 
     const iTunesElement = document.createElement("div");
     iTunesElement.classList.add('itunes');
@@ -38,13 +38,13 @@ function showiTunes(itunes) {
     trackNameElement.classList.add("track__name");
     trackNameElement.innerHTML = trackName;
 
-    const genreNameElement = document.createElement("div");
+    const genreNameElement = document.createElement("img");
     genreNameElement.classList.add("genre__name");
-    genreNameElement.innerHTML = genreName;
+    genreNameElement.setAttribute("src", genreName);
 
+    iTunesElement.append(genreNameElement);
     iTunesElement.append(artistNameElement);
     iTunesElement.append(trackNameElement);
-    iTunesElement.append(genreNameElement);
     iTunesresultElement.append(iTunesElement);
   }
 }
