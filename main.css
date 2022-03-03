@@ -7,6 +7,7 @@ html {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAAXNSR0IArs4c6QAAADJJREFUKFNjZCACMBKhhgFdkRQDA8MzdI3IirAqAGkgyzqsTsRnEtx6QtaBFRJSBLYeADuMBApo69XcAAAAAElFTkSuQmCC);
   }
   
+  
   .app {
     margin: 0 auto;
     width: calc(100% - 32px);
@@ -20,7 +21,7 @@ html {
     width: 100%;
   }
   .input:focus {
-    border-color: red;
+    border-color: rgb(38, 0, 255);
   }
   
   .button {
@@ -36,11 +37,11 @@ html {
     transition: background-color 0.1s ease;
   }
   .button:focus {
-    border-color: red;
+    border-color: rgb(0, 119, 255);
   }
   .button:hover {
     border-color: black;
-    background: red;
+    background: rgb(22, 176, 223);
   }
   
   .title {
@@ -50,16 +51,16 @@ html {
     margin: 48px 0;
   }
   
-  #iTunes-form {
+  .iTunes-form {
     margin: 32px 0;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
   }
-  #iTunes-form > :nth-child(n + 2) {
+  .iTunes-form > :nth-child(n + 2) {
     margin-left: 16px;
   }
-  #iTunes-form .button {
+  .iTunes-form .button {
     flex: 0 0 auto;
   }
   
@@ -81,14 +82,14 @@ html {
     align-items: center;
   }
   
-  /* .pokemon__sprite {
+   /* .pokemon__sprite {
     width: 240px;
     height: 240px;
     border-radius: 100%;
     border: 1px dotted black;
     image-rendering: pixelated;
     background: white;
-  } */
+  }  */
   
   .artist__name {
     font-size: 1.25rem;
@@ -98,10 +99,10 @@ html {
     margin: 24px;
   }
   
-  .pokemon__abilities {
+  .artist__name {
     width: 100%;
   }
-  .track__name {
+  .artist__name {
     padding: 8px 0;
     text-transform: uppercase;
     font-size: 0.5rem;

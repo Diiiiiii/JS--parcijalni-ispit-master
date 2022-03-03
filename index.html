@@ -3,17 +3,18 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Search Song and Artist</title>
+    <title>Apple Music Search</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-   
+ <link rel="stylesheet" href="reset.css" />
+ 
 </head>
 <body>
     <main class="app">
-        <h1="title">iTunes Searcher</h1>
+        <h1 class="title">iTunes Search API</h1>
         <form id="iTunes-form" class="iTunes-form" autocomplete="off">
             <input id="iTunes-form-query" class="input" type="text" name="query" placeholder="e.g. Bon Jovi or It's my life" />
-        <button class="button" type="submit">Search Song or Artist</button>
+        <button class="button" type="submit">Find Song or Artist</button>
       </form>
       <div id="iTunes-error" class="iTunes-error"></div>
       <div id="iTunes-result" class="iTunes-result"></div>
